@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+@theme {  
+    --font-roboto: "Roboto", sans-serif;
+    --font-noto: "Noto-Sans", sans-serif;
+    --color-newBlue : #5165dc;
+
+}
+
+@layer utilities {
+    .bg-dot {
+      background-image: radial-gradient(circle, #dadef6 1px, transparent 3px);
+    }
+}
