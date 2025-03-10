@@ -31,13 +31,14 @@ function Ques(){
 
 function Faq({q,d,n,set}){
     return (
-        <div className="flex flex-col items-center w-full border-b-[1px] border-[#9f9f9f] mb-6  " onClick={()=>{if(d!==n){set(n)}else{
+        <div className="flex flex-col items-center w-full border-b-[1px]  border-[#9f9f9f] mb-6  " onClick={()=>{if(d!==n){set(n)}else{
             set(0)
         }}}>
             <h2 className="flex sm:w-[540px] md:w-[700px] w-[320px] justify-between hover:text-red-400  text-[#7d7d7d] text-xl mb-2 pb-4" >
-                {q}cd
+                {q}
+                <DownIcon className={`w-8 h-8 ${d==n?"scale-y-[-1]":""} duration-300`} />
             </h2>
-            <p className={`flex ${d==n?"block":"hidden"} md:w-full w-3/7 justify-between text-zinc-400 text-xl text-justify  pb-9`}>
+            <p className={`flex ${d==n?"block":"hidden"} md:w-full w-3/7 justify-between text-zinc-400 text-xl text-justify duration-600  pb-9`}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore? 
             </p>
         </div>
